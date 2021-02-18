@@ -1,0 +1,10 @@
+D:\WebService_IUT\WebService_IUT\obj\Debug\WebService_IUT.csprojAssemblyReference.cache
+D:\WebService_IUT\WebService_IUT\obj\Debug\WebService_IUT.csproj.CoreCompileInputs.cache
+D:\WebService_IUT\WebService_IUT\bin\Debug\WebService_IUT.dll.config
+D:\WebService_IUT\WebService_IUT\bin\Debug\WebService_IUT.dll
+D:\WebService_IUT\WebService_IUT\bin\Debug\WebService_IUT.pdb
+D:\WebService_IUT\WebService_IUT\bin\Debug\Newtonsoft.Json.dll
+D:\WebService_IUT\WebService_IUT\bin\Debug\Newtonsoft.Json.xml
+D:\WebService_IUT\WebService_IUT\obj\Debug\WebService_IUT.csproj.CopyComplete
+D:\WebService_IUT\WebService_IUT\obj\Debug\WebService_IUT.dll
+D:\WebService_IUT\WebService_IUT\obj\Debug\WebService_IUT.pdb
