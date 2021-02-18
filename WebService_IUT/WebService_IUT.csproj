@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="01 - Services\ICRUD.cs" />
-    <Compile Include="02 - DataContracts\Departments.cs" />
+    <Compile Include="02 - DataContracts\Department.cs" />
     <Compile Include="02 - DataContracts\Promotion.cs" />
     <Compile Include="02 - DataContracts\Student.cs" />
     <Compile Include="01 - Services\ISearch.cs" />

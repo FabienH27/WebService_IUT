@@ -46,8 +46,13 @@ namespace WebService_IUT.DataContracts
 
         public int StudentId
         {
-            get { return m_studentId++;}
-            private set { }
+            get { return m_studentId;}
+            private set { m_studentId++; }
+        }
+
+        public Student()
+        {
+            StudentId++;
         }
     }
 }

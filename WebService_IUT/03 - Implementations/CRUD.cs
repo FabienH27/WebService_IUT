@@ -18,7 +18,7 @@ namespace WebService_IUT.Implementations
         //Lists of required classes : promotions, students  and students
         List<Promotion> promosList = new List<Promotion>();
         List<Student> studentsList = new List<Student>();
-        List<Departments> deptsList = new List<Departments>();
+        List<Department> deptsList = new List<Department>();
 
         /// <summary>
         /// Updating JSON file for the departments
@@ -26,15 +26,14 @@ namespace WebService_IUT.Implementations
         /// <param name="departmentName">Departments to add</param>
         public bool AddDepartment(string departmentName)
         {
-            deptsList = JsonConvert.DeserializeObject<List<Departments>>(OpenFiles.OpenDeptFile());
-            Departments department = new Departments() { DeptName = departmentName };
+            deptsList = JsonConvert.DeserializeObject<List<Department>>(OpenFiles.OpenDeptFile());
+            Department department = new Department() { DeptName = departmentName };
 
-            foreach (Departments dept in deptsList)
+            foreach (Department dept in deptsList)
             {
                 if (dept.DeptName == departmentName)
                     return false;
             }
-
             deptsList.Add(department);
             var json = JsonConvert.SerializeObject(deptsList, Formatting.Indented);
             File.WriteAllText(OpenFiles.deptLocation, json);
@@ -55,7 +54,7 @@ namespace WebService_IUT.Implementations
             {
                 PromoName = promoName,
                 PromoDept = promoDept,
-                StudentsPromotion = new List<Student>()
+                StudentsPromotion = new List<Student>(),
             };
             promosList.Add(promo);
             var json = JsonConvert.SerializeObject(promosList, Formatting.Indented);
@@ -80,7 +79,7 @@ namespace WebService_IUT.Implementations
                 StudentFirstName = studentFirstName,
                 StudentLastName = studentLastName,
                 StudentDateBirth = studentBirthDate.Date.ToShortDateString(),
-                StudentPromoName = promoName
+                StudentPromoName = promoName,
             };
 
             AddStudentToPromo(student, promoName);
@@ -113,7 +112,7 @@ namespace WebService_IUT.Implementations
         public List<string> UpdateDeptLists()
         {
             string contentDepartments = OpenFiles.OpenDeptFile();
-            deptsList = JsonConvert.DeserializeObject<List<Departments>>(contentDepartments);
+            deptsList = JsonConvert.DeserializeObject<List<Department>>(contentDepartments);
             List<string> departmentsNames = deptsList.Select(Dept => Dept.DeptName).ToList();
             return departmentsNames;
         }

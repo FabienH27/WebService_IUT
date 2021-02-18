@@ -1,36 +1,42 @@
 [
   {
-    "PromoName": "GEA",
-    "PromoDept": "GEA",
-    "StudentsPromotion": []
-  },
-  {
-    "PromoName": "GEA1",
-    "PromoDept": "GEA",
+    "PromoName": "Info 1",
+    "PromoDept": "Info",
     "StudentsPromotion": []
   },
   {
     "PromoName": "Info 2 Cisco",
     "PromoDept": "Info",
-    "StudentsPromotion": [
-      {
-        "StudentFirstName": "Fabien",
-        "StudentLastName": "Hannon",
-        "StudentDateBirth": "27/07/2001",
-        "StudentPromoName": "Info 2 Cisco"
-      },
-      {
-        "StudentFirstName": "Fabien",
-        "StudentLastName": "Hannon",
-        "StudentDateBirth": "27/07/2001",
-        "StudentPromoName": "Info 2 Cisco"
-      },
-      {
-        "StudentFirstName": "Fabien",
-        "StudentLastName": "Hannon",
-        "StudentDateBirth": "27/07/2001",
-        "StudentPromoName": "Info 2 Cisco"
-      }
-    ]
+    "StudentsPromotion": []
+  },
+  {
+    "PromoName": "Info 2 Typo3",
+    "PromoDept": "Info",
+    "StudentsPromotion": []
+  },
+  {
+    "PromoName": "Info 2 P.E.",
+    "PromoDept": "Info",
+    "StudentsPromotion": []
+  },
+  {
+    "PromoName": "GB 1",
+    "PromoDept": "GB",
+    "StudentsPromotion": []
+  },
+  {
+    "PromoName": "GB 2",
+    "PromoDept": "GB",
+    "StudentsPromotion": []
+  },
+  {
+    "PromoName": "GB 3",
+    "PromoDept": "GB",
+    "StudentsPromotion": []
+  },
+  {
+    "PromoName": "GMP 1",
+    "PromoDept": "GMP",
+    "StudentsPromotion": []
   }
 ]

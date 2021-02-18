@@ -10,9 +10,9 @@ namespace WebService_IUT.DataContracts
     [DataContract]
     public class Promotion
     {
-        public string m_promotionName;
-        public string m_promoDept;
-        public List<Student> m_studentPromo = new List<Student>();
+        string m_promotionName;
+        string m_promoDept;
+        List<Student> m_studentPromo = new List<Student>();
         int m_promoId;
 
         [DataMember]
@@ -36,10 +36,16 @@ namespace WebService_IUT.DataContracts
             set { m_studentPromo = value; }
         }
 
-        public int DeptId
+        public int PromoId
         {
-            get { return m_promoId++; }
-            private set { }
+            get { return m_promoId; }
+            private set { m_promoId++; }
         }
+
+        public Promotion()
+        {
+            PromoId++;
+        }
+
     }
 }

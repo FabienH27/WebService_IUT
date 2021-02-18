@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace WebService_IUT.DataContracts
 {
     [DataContract]
-    public class Departments
+    public class Department
     {
         string m_departmentName;
         int m_deptId;
@@ -21,8 +21,13 @@ namespace WebService_IUT.DataContracts
         }
         public int DeptId
         {
-            get { return m_deptId++; }
-            private set { }
+            get { return m_deptId; }
+            private set { m_deptId++; }
+        }
+
+        public Department()
+        {
+            DeptId++;
         }
     }
 }
